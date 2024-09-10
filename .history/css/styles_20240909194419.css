@@ -41,8 +41,7 @@ h4 {
     background: linear-gradient(#d98fe9, #5E91FA);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    -webkit-text-fill-color: transparent;}
 
 h2 {
     margin-bottom: 1.5rem;
@@ -81,24 +80,18 @@ h3 {
 
 .game-card .message {
     position: absolute;
-    top: 45%;
-    width: 100%;
-    background-color: #000000b3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 1.5rem;
-    text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-size: 1.6rem !important;
 }
 
 .game-card:hover .message {
     opacity: 1;
     /* Mostrar "Credits" en hover */
-}
-
-.modern-antiqua-regular {
-    font-family: "Modern Antiqua", serif;
 }
 
 /* Projects */
@@ -117,7 +110,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 /* Career, Education, Volunteering */
@@ -155,6 +147,11 @@ ul li ul li {
     margin-top: 0.2rem;
 }
 
+.volunteering-img {
+    width: 95%;
+    height: 230px;
+}
+
 .volunteering-list {
     list-style-type: "★ ";
     margin: 0;
@@ -170,67 +167,4 @@ ul li ul li {
 
 p {
     text-align: justify;
-}
-
-/* Responsiveness */
-
-.title-small,
-.title-x-small {
-    display: none;
-}
-
-@media screen and (max-width: 1400px) {
-
-    .title-large,
-    .title-x-small {
-        display: none;
-    }
-    .title-small {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .title-large,
-    .title-small {
-        display: none;
-    }
-    .title-x-small {
-        display: block;
-        text-align: center;
-        
-    }
-}
-
-@media screen and (max-width: 995px) {
-
-    .games-section,
-    .projects-section,
-    .career-section,
-    .education-section,
-    .volunteering-section {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .projects-section {
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    #lostContinent {
-        margin: 0 auto;
-        width: 65%;
-    }
-
-    #clownTherapy {
-        margin: 0 auto;
-        width: 85%;
-    }
-
-    #backgroundTherapy {
-        background-color: #fff;
-        margin-bottom: 1rem;
-    }
 }
